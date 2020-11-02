@@ -130,17 +130,20 @@ const frameworkList: Framework[] = [
         continue: true,
       },
       {
-        src: '^/assets/images/[^/]+-[0-9a-f]{32}\\.(ico|svg|jpg|jpeg|png|gif|webp)$',
+        src:
+          '^/assets/images/[^/]+-[0-9a-f]{32}\\.(ico|svg|jpg|jpeg|png|gif|webp)$',
         headers: { 'cache-control': 'max-age=31536000, immutable' },
         continue: true,
       },
       {
-        src: '^/assets/medias/[^/]+-[0-9a-f]{32}\\.(ogv|wav|mp3|m4a|aac|oga|flac)$',
+        src:
+          '^/assets/medias/[^/]+-[0-9a-f]{32}\\.(ogv|wav|mp3|m4a|aac|oga|flac)$',
         headers: { 'cache-control': 'max-age=31536000, immutable' },
         continue: true,
       },
       {
-        src: '^/assets/files/[^/]+-[0-9a-f]{32}\\.(pdf|doc|docx|xls|xlsx|zip|rar)$',
+        src:
+          '^/assets/files/[^/]+-[0-9a-f]{32}\\.(pdf|doc|docx|xls|xlsx|zip|rar)$',
         headers: { 'cache-control': 'max-age=31536000, immutable' },
         continue: true,
       },
@@ -601,6 +604,22 @@ const frameworkList: Framework[] = [
     slug: 'zola',
     buildCommand: 'zola build',
     getOutputDirName: async () => 'public',
+  },
+  {
+    name: 'Sanity',
+    slug: 'sanity',
+    dependency: '@sanity/cli',
+    buildCommand: 'sanity build',
+    getOutputDirName: async () => 'dist',
+    defaultRoutes: [
+      {
+        handle: 'filesystem',
+      },
+      {
+        src: '/(.*)',
+        dest: '/index.html',
+      },
+    ],
   },
 ];
 

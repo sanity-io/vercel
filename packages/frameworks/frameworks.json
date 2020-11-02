@@ -845,5 +845,36 @@
         "placeholder": "`public` if it exists, or `.`"
       }
     }
-  }
+  },
+  {
+    "name": "Sanity.io",
+    "slug": "sanity-io",
+    "demo": "https://next-blog-sanity.now.sh/",
+    "logo": "https://raw.githubusercontent.com/vercel/vercel/master/packages/frameworks/logos/sanity.svg",
+    "tagline": "The platform for structured content.",
+    "description": "A real-time content platform with a fully customizeable editing environment.",
+    "website": "https://sanity.io/",
+    "detectors": {
+      "every": [
+        {
+          "path": "package.json",
+          "matchContent": "\"(dev)?(d|D)ependencies\":\\s*{[^}]*\"@sanity\\/base\":\\s*\".+?\"[^}]*}"
+        },
+        {
+          "path": "sanity.json"
+        }
+      ]
+    },
+    "settings": {
+      "buildCommand": {
+        "placeholder": "`npx @sanity/cli build` or `sanity build`"
+      },
+      "devCommand": {
+        "value": "sanity start --port $PORT"
+      },
+      "outputDirectory": {
+        "value": "dist"
+      }
+    }
+  },
 ]
