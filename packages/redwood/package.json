@@ -18,7 +18,7 @@
     "prepublishOnly": "./build.sh"
   },
   "dependencies": {
-    "@netlify/zip-it-and-ship-it": "1.2.0",
+    "@netlify/zip-it-and-ship-it": "4.2.2",
     "@vercel/frameworks": "0.1.1"
   },
   "devDependencies": {
