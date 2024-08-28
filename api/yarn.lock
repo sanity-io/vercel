@@ -500,10 +500,10 @@ typescript@3.9.6:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.6.tgz#8f3e0198a34c3ae17091b35571d3afd31999365a"
   integrity sha512-Pspx3oKAPJtjNwE92YS05HQoY7z2SFyOpHo9MqJor3BXAGNaPUs83CuVp9VISFkSjyRfiTpmKuAYGJB7S7hOxw==
 
-unzip-stream@0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/unzip-stream/-/unzip-stream-0.3.0.tgz#c30c054cd6b0d64b13a23cd3ece911eb0b2b52d8"
-  integrity sha512-NG1h/MdGIX3HzyqMjyj1laBCmlPYhcO4xEy7gEqqzGiSLw7XqDQCnY4nYSn5XSaH8mQ6TFkaujrO8d/PIZN85A==
+unzip-stream@0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/unzip-stream/-/unzip-stream-0.3.2.tgz#e7bfd887f4c9a284b46978693ba54e0d4f5095df"
+  integrity sha512-oWhfqwjx36ULFG+krfkbtbrc/BeEzaYrlqdEWa5EPNd6x6RerzuNW8aSTM0TtNtrOfUKYdO0TwrlkzrXAE6Olg==
   dependencies:
     binary "^0.3.0"
     mkdirp "^0.5.1"
