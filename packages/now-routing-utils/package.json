@@ -20,7 +20,7 @@
     "test-unit": "jest --env node --verbose --runInBand --bail"
   },
   "dependencies": {
-    "path-to-regexp": "6.1.0"
+    "path-to-regexp": "8.0.0"
   },
   "devDependencies": {
     "@types/node": "12.12.20",
